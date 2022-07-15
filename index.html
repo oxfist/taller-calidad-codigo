@@ -58,21 +58,37 @@
 
 					<img src="./bookshelf.png" height="400" />
 					---
-					### ¿Qué es “refactorización”?
+					### ¿Qué es la “refactorización”?
 
 					<ul>
 						<li class="fragment">Cambiar código para mejorar estructura interna <em>sin alterar</em> su comportamiento externo</li>
 						<li class="fragment">Receta para mejorar tu código</li>
 						<li class="fragment"><em>“El cambio de código es una verdad absoluta e inevitable”</em></li>
 						<li class="fragment">Piensa <em>solo un poco</em> más adelante y aplica “patrones” y “buenas prácticas” (aprendizaje continuo)</li>
-						<li class="fragment">Riesgoso, si no se hace sistemáticamente y con cuidado a detalles, puede introducir bugs y estancarte</li>
+						<li class="fragment">Riesgoso si no se hace sistemáticamente y con cuidado a detalles (puede introducir bugs y estancarte)</li>
 					</ul>
 					---
 					### Refactorización Nro. 1: Extraer función
 
-					- ¿En qué consiste?
+					<ul>
+						<li class="fragment">¿En qué consiste?</li>
+						<img class="fragment" src="./refactoringDemo.png" height="400" />
+					</ul>
+					---
+					### Refactorización Nro. 1: Extraer función
+
 					- ¿En qué casos vale la pena aplicar?
+					  - Función muuuuy larga <!-- .element: class="fragment" -->
+					  - Para reusar código <!-- .element: class="fragment" -->
+					  - Cuando hay separación entre intención e implementación <!-- .element: class="fragment" -->
+					---
+					### Refactorización Nro. 1: Extraer función
+
 					- ¿Qué pasos hay que seguir para hacerlo?
+					  1. Crear nueva función y ponerle nombre según la intención <!-- .element: class="fragment" -->
+					  2. Copiar código desde el origen a la nueva función <!-- .element: class="fragment" -->
+					  3. Buscar en el código extraído referencias a variables que sean locales en la función original y pasarlas como parámetros <!-- .element: class="fragment" -->
+					  4. Reemplazar el antiguo código con la nueva función <!-- .element: class="fragment" -->
 					---
 					## Ejercicio 3.
 					## Aplicar Refactorización 🤓
